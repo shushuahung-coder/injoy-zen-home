@@ -1,12 +1,14 @@
 /* Google Fonts (Noto Sans TC / Noto Serif TC) loaded via <link> in index.html */
 
-/* 源泉圓體 - GenSenRounded (圓體中文字型) */
+/* 源泉圓體 - GenSenRounded (圓體中文字型)
+   Subset to the glyphs used on the site (see scripts/subset-fonts.sh):
+   15MB otf -> ~140KB woff2. Missing glyphs fall back to Noto Sans TC. */
 @font-face {
   font-family: 'GenSenRounded';
-  src: url('/fonts/GenSenRounded2TW-R.otf') format('opentype');
+  src: url('/fonts/GenSenRounded-subset.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 /* 芫荽 - Iansui (手寫風格中文字型)
