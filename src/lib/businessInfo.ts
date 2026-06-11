@@ -4,6 +4,11 @@
 export const PHONE_DISPLAY = "02-2250-0166";
 export const PHONE_TEL_HREF = "tel:+886-2-2250-0166";
 
+export const ADDRESS_DISPLAY = "新北市板橋區文聖街131號";
+
+/** LINE 官方帳號（加好友/預約） */
+export const LINE_URL = "https://lin.ee/97XgLRz";
+
 export interface BusinessHourSegment {
   label: string;
   time: string;

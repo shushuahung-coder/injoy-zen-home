@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { MobileReserveBar } from "./components/MobileReserveBar";
 import Index from "./pages/Index";
 
 // Lazy-loaded pages — only fetched when the user navigates to them
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        <MobileReserveBar />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

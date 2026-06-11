@@ -4,6 +4,7 @@ import { SkipLink } from "@/components/SkipLink";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import {
+  ADDRESS_DISPLAY,
   BUSINESS_HOURS,
   BUSINESS_HOURS_TEXT,
   CLOSED_DAYS,
@@ -18,7 +19,7 @@ import signboardSrcSet from "@/assets/signboard.png?w=600;1200;1800&format=webp&
 const Location = () => {
   useSEO({
     title: "交通資訊｜新北板橋文聖街｜injoy 悦納",
-    description: `injoy 悦納位於新北市板橋區文聖街131號，近捷運江子翠站步行約10分鐘。${BUSINESS_HOURS_TEXT}，每${CLOSED_DAYS}公休。`,
+    description: `injoy 悦納位於${ADDRESS_DISPLAY}，近捷運江子翠站步行約10分鐘。${BUSINESS_HOURS_TEXT}，每${CLOSED_DAYS}公休。`,
   });
 
   return (
@@ -77,7 +78,7 @@ const Location = () => {
               {/* Address */}
               <div>
                 <p className="text-foreground font-medium text-lg tracking-wide">
-                  新北市板橋區文聖街131號
+                  {ADDRESS_DISPLAY}
                 </p>
                 <p className="text-muted-foreground text-base tracking-wide mt-1">
                   近捷運江子翠站（步行 10-12 分鐘）
